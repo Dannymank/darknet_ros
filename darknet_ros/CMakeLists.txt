@@ -2,7 +2,10 @@ cmake_minimum_required(VERSION 2.8.12)
 project(darknet_ros)
 
 # Set c++11 cmake flags
-set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
+enable_language(C)
+enable_language(CXX)
+
+set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_C_FLAGS "-Wall -Wno-unused-result -Wno-unknown-pragmas -Wno-unused-variable -Wfatal-errors -fPIC ${CMAKE_C_FLAGS}")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
