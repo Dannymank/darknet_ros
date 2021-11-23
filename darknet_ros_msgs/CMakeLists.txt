@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 2.8.12)
 
 project(darknet_ros_msgs)
+enable_language(C)
+enable_language(CXX)
 
-set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
-
+set(CMAKE_CXX_STANDARD 11)
 find_package(catkin REQUIRED
   COMPONENTS
     actionlib_msgs
